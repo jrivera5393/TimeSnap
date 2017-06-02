@@ -1,0 +1,13 @@
+@model TimeSnap.Models.Stopwatch
+
+<div id="@Model.StorageId" class="row valign-wrapper scale-transition scale-out">
+    <div class="col s8 clock inactive center-align">
+        <span>0:00:00.0</span>
+        <!--<div class="overlay waves-effect"></div>-->
+    </div>
+    <div class="col s4 clock-controls right-align">
+        <a id="stopwatch-btn-start" class="btn-floating btn-large waves-effect waves-light green"><i class="fa fa-play"></i></a>
+        <a id="stopwatch-btn-pause" style="display: none;" class="btn-floating btn-large waves-effect waves-light cyan"><i class="fa fa-pause"></i></a>
+        <a id="stopwatch-btn-reset" class="btn-floating btn-large waves-effect waves-light red"><i class="fa fa-square"></i></a>
+    </div>
+</div>

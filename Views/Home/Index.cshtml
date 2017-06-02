@@ -1,0 +1,51 @@
+﻿<div class="row">
+	<div id="stopwatch-container" class="col s5 offset-s4">
+        <vc:add-stopwatch></vc:add-stopwatch>
+		<!--@await Component.InvokeAsync("AddStopwatch")-->
+	</div>
+    <div id="task-container" class="col s7 scale-transition scale-out">
+        @await Component.InvokeAsync("TaskList")
+    </div>
+</div>
+
+@section Scripts{
+
+    <script src='@Url.Content("~/lib/jt.timepicker/jquery.timepicker.min.js")'></script>    
+	<script src='@Url.Content("~/js/stopwatch-mod.js")'></script>
+
+    <!--Component's Scripts-->
+    <script src='@Url.Content("~/js/Components/AddStopwatch.js")'></script>
+    <script src='@Url.Content("~/js/Components/TaskList.js")'></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+			var url = '@Url.Action("GetComponent","Home")';
+            var stopwatchContainer = "#stopwatch-container";
+
+			getStopwatches(url, stopwatchContainer);
+            setPage(stopwatchContainer);
+
+           $("#btnAddStopwatch").click(function(){                
+                var containerId = "#stopwatch-container";
+
+                setStopwatch(null, url, containerId);
+                setPage(containerId)
+            });
+        });
+
+        function setPage(containerId){
+            var stopwatchContainer = $(containerId);
+            var taskContainer = $("#task-container");
+
+            if(stopwatchContainer.hasClass("offset-s4")){
+                stopwatchContainer.removeClass("offset-s4");        
+                taskContainer.addClass("scale-in");        
+            }
+        }
+
+    </script>
+}
+
+@section Styles{    
+    <link type="text/css" rel="stylesheet" href='@Url.Content("~/lib/jt.timepicker/jquery.timepicker.css")'>	
+}
