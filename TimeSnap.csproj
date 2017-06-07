@@ -30,4 +30,8 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.1"/>
   </ItemGroup>
 
+  <!--<Target Name="MyPreCompileTarget" BeforeTargets="Build">
+    <Exec Command="webpack" />
+  </Target>-->
+
 </Project>

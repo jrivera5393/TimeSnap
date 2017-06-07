@@ -1,23 +1,16 @@
 ﻿<div class="row">
 	<div id="stopwatch-container" class="col s5 offset-s4">
-        <vc:add-stopwatch></vc:add-stopwatch>
-		<!--@await Component.InvokeAsync("AddStopwatch")-->
+        <section id="add-stopwatch"></section>
 	</div>
     <div id="task-container" class="col s7 scale-transition scale-out">
-        @await Component.InvokeAsync("TaskList")
+        <!--@await Component.InvokeAsync("TaskList")-->
     </div>
 </div>
 
-@section Scripts{
+@section Scripts{   
 
-    <script src='@Url.Content("~/lib/jt.timepicker/jquery.timepicker.min.js")'></script>    
-	<script src='@Url.Content("~/js/stopwatch-mod.js")'></script>
-
-    <!--Component's Scripts-->
-    <script src='@Url.Content("~/js/Components/AddStopwatch.js")'></script>
-    <script src='@Url.Content("~/js/Components/TaskList.js")'></script>
-
-    <script type="text/javascript">
+    <!--Component's Scripts-->    
+    <!--<script type="text/javascript">
         $(document).ready(function () {
 			var url = '@Url.Action("GetComponent","Home")';
             var stopwatchContainer = "#stopwatch-container";
@@ -43,7 +36,7 @@
             }
         }
 
-    </script>
+    </script>-->
 }
 
 @section Styles{    

@@ -23,5 +23,11 @@ namespace TimeSnap.Models
                 return new []{ ITDG, Local };
             }
         }
+
+        public static class TimeEntryStatus {
+            public const string Active = "Active";
+            public const string Paused = "Paused";
+            public const string Finished = "Finished";
+        }
     }
 }

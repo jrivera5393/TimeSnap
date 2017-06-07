@@ -2,8 +2,8 @@ _build/
 _site/
 Properties/
 node_modules/
+[Mm]igrations/
 wwwroot/lib
-Migrations/
 
 # Use git add -f to force override .sln when required. Not needed in most cases.
 # git add -f myProj.sln
@@ -215,3 +215,4 @@ __pycache__/
 
 #Mac OSX
 .DS_Store
+/Migrations

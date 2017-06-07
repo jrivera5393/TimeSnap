@@ -8,6 +8,7 @@ namespace TimeSnap.Models
     {
         [Key]
         public long TimeEntryId { get; set; }
+        public int BeginingTimestamp {get;set;}
         public int RunningTime {get;set;}        
         public int Hours { get; set; }
         public int Minutes { get; set; }
