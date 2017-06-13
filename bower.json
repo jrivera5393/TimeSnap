@@ -16,10 +16,8 @@
   ],
   "dependencies": {
     "jquery": "2.2.0",
-    "jquery-validation": "1.14.0",
-    "jquery-validation-unobtrusive": "3.2.6",
     "materialize": "~0.98.2",
     "font-awesome": "font-awsome#~4.7.0",
-    "jt.timepicker": "jquery-timepicker-jt#~1.11.11"
+    "animate.css": "^3.5.2"
   }
 }

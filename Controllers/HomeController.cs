@@ -12,11 +12,6 @@ namespace TimeSnap.Controllers
         public IActionResult Index()
         {
             return View();
-        }       
-
-        public IActionResult GetComponent(string storageId)
-        {
-            return ViewComponent("StopWatch", new { storageId = storageId });
-        }        
+        }   
     }
 }

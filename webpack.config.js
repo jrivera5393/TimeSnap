@@ -18,12 +18,12 @@ module.exports = {
                 }
             },
             {
-                test : /\.jsx?/,
+                test : /\.jsx$/,
                 include : __dirname,
                 loader : 'babel-loader'
             },
             {
-                test : /\.jsx?/,
+                test : /\.jsx$/,
                 include : path.join(__dirname, '/wwwroot/js/Components'),
                 loader : 'babel-loader'
             },            
