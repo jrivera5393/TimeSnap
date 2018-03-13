@@ -1,0 +1,93 @@
+nav {
+  color: #000;
+  background-color: #fffafa;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  background-color: black;
+  padding-top: 5px;
+}
+
+.clock {
+  display: block;
+  font-size: 60px;
+  color: #0277bd;
+  cursor: pointer;
+}
+
+.clock > span {
+  padding-top: 5px;
+}
+
+.blur {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.clock.inactive {
+  color: #9e9e9e;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.clock-controls > a {
+  width: 54px;
+  height: 54px;
+}
+
+.collection-item-wrapper {
+  box-sizing: content-box;
+  height: 37px;
+  line-height: 37px;
+}
+
+.fixed-action-btn.relative {
+  position: inherit;
+  left: 85%;
+  bottom: inherit;
+}
+.fixed-action-btn.relative.horizontal ul {
+  margin: 0 8px;
+  right: 40px;
+}
+.fixed-action-btn.relative.horizontal ul li {
+  margin: 0 8px;
+}
+
+.btn-floating i {
+  line-height: 39px;
+}
+
+.swal2-buttonswrapper button {
+  margin-right: 5%;
+}
+
+.collection-item {
+  min-height: 55px;
+  padding: 10px 15px !important;
+}
+
+.collection-item i {
+  margin-right: 6px;
+}
